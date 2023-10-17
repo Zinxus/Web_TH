@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DAO\categoriesDAO.cs" />
     <Compile Include="Model\Categories.cs" />
     <Compile Include="Model\Contacts.cs" />
     <Compile Include="Model\Links.cs" />
@@ -56,7 +57,7 @@
     <Compile Include="Model\MyDBContentext.cs" />
     <Compile Include="Model\OrderDetails.cs" />
     <Compile Include="Model\Orders.cs" />
-    <Compile Include="Model\Pots.cs" />
+    <Compile Include="Model\Posts.cs" />
     <Compile Include="Model\Products.cs" />
     <Compile Include="Model\Sliders.cs" />
     <Compile Include="Model\Suppliers.cs" />
@@ -77,8 +78,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
