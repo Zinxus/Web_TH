@@ -10,3 +10,15 @@ D:\CNTT5\ptuweb\Web_TH\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
 D:\CNTT5\ptuweb\Web_TH\MyClass\obj\Debug\MyClass.csproj.CopyComplete
 D:\CNTT5\ptuweb\Web_TH\MyClass\obj\Debug\MyClass.dll
 D:\CNTT5\ptuweb\Web_TH\MyClass\obj\Debug\MyClass.pdb
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\MyClass.dll.config
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\MyClass.dll
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\MyClass.pdb
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\EntityFramework.dll
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\EntityFramework.xml
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\obj\Debug\MyClass.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\obj\Debug\MyClass.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\obj\Debug\MyClass.dll
+C:\Users\DELL\OneDrive\Tài liệu\GitHub\PTUDW\Web_TH\MyClass\obj\Debug\MyClass.pdb
