@@ -17,5 +17,10 @@ namespace Web_TH
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
-    }
+		//Tao moi Session
+		protected void Session_Start()
+		{
+			Session["UserID"] = "1";
+		}
+	}
 }

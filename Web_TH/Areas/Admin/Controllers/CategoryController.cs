@@ -284,7 +284,7 @@ namespace Web_TH.Areas.Admin.Controllers
 
 		//////////////////////////////////////////////////////////////////////////////////////
 		//RECOVER
-		// GET: Admin/Recover/Status/5
+		// GET: Admin/Category/Recover/5
 		public ActionResult Recover(int? id)
 		{
 

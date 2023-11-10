@@ -42,7 +42,7 @@ namespace MyClass.DAO
 			return list;
 		}
 		//details
-		public Categories getRow(int id) 
+		public Categories getRow(int? id) 
 		{
 			if (id == null)
 			{
