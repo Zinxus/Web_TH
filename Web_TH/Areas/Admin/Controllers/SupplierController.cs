@@ -151,20 +151,18 @@ namespace Web_TH.Areas.Admin.Controllers
 				//Xu ly tu dong cho: Slug
 				suppliers.Slug = XString.Str_Slug(suppliers.Name);
 
-				//truoc khi cap nhat lai anh moi thi xoa anh cu
-				var img = Request.Files["img"];//lay thong tin file
-				string PathDir = "~/Public/img/supplier/";
-				if (img.ContentLength != 0 && suppliers.Image != null)//ton tai mot logo cua NCC tu truoc
-				{
-					//xoa anh cu
-					string DelPath = Path.Combine(Server.MapPath(PathDir), suppliers.Image);
-					System.IO.File.Delete(DelPath);
-				}
-				//upload anh moi cua NCC
 				//xu ly cho phan upload hinh anh
-
+				var img = Request.Files["img"];//lay thong tin file
+				string PathDir = "~/Public/img/supplier";
 				if (img.ContentLength != 0)
 				{
+					//Xu ly cho muc xoa hinh anh
+					if (suppliers.Image != null)
+					{
+						string DelPath = Path.Combine(Server.MapPath(PathDir), suppliers.Image);
+						System.IO.File.Delete(DelPath);
+					}
+
 					string[] FileExtentions = new string[] { ".jpg", ".jpeg", ".png", ".gif" };
 					//kiem tra tap tin co hay khong
 					if (FileExtentions.Contains(img.FileName.Substring(img.FileName.LastIndexOf("."))))//lay phan mo rong cua tap tin
@@ -172,11 +170,12 @@ namespace Web_TH.Areas.Admin.Controllers
 						string slug = suppliers.Slug;
 						//ten file = Slug + phan mo rong cua tap tin
 						string imgName = slug + img.FileName.Substring(img.FileName.LastIndexOf("."));
-						suppliers.Image = imgName;//abc-def-1.jpg
-												  //upload hinh
+						suppliers.Image = imgName;
+						//upload hinh
 						string PathFile = Path.Combine(Server.MapPath(PathDir), imgName);
 						img.SaveAs(PathFile);
 					}
+
 				}//ket thuc phan upload hinh anh
 
 				//cap nhat mau tin vao DB
@@ -213,8 +212,19 @@ namespace Web_TH.Areas.Admin.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
 			Suppliers suppliers = suppliersDao.getRow(id);
-			//Xoa khoi DB
-			suppliersDao.Delete(suppliers);
+			//xu ly cho phan upload hinh anh
+			var img = Request.Files["img"];//lay thong tin file
+			string PathDir = "~/Public/img/supplier";
+			//xoa mau tin ra khoi DB
+			if (suppliersDao.Delete(suppliers) == 1)
+			{
+				//Xu ly cho muc xoa hinh anh
+				if (suppliers.Image != null)
+				{
+					string DelPath = Path.Combine(Server.MapPath(PathDir), suppliers.Image);
+					System.IO.File.Delete(DelPath);
+				}
+			}
 			//hien thong baothanh cong
 			TempData["message"] = new XMessage("danger", "Xóa nhà cung cấp thành công");
 			return RedirectToAction("Index");
