@@ -117,6 +117,8 @@ namespace Web_TH.Areas.Admin.Controllers
 				TempData["message"] = new XMessage("danger", "Không tồn tại sản phẩm");
 				return RedirectToAction("Index");
 			}
+			ViewBag.ListCatID = new SelectList(categoriesDAO.getlist("Index"), "Id", "Name");//sai CatId - truy van tu bang Categories
+			ViewBag.ListSupID = new SelectList(suppliersDao.getlist("Index"), "Id", "Name");//sai SupplierID - truy van bang Suppliers
 			return View(products);
 		}
 

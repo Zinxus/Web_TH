@@ -5,20 +5,20 @@ using System.Web;
 
 namespace Web_TH.Library
 {
-    public class XMessage
-    {
-        public string TypeMsg { get; set; }
+	public class XMessage
+	{
+		public string TypeMsg { get; set; }
 
-        public string Msg { get; set; }
-        public XMessage()
-        {
+		public string Msg { get; set; }
+		public XMessage()
+		{
 
-        }
+		}
 
-        public XMessage(string TypeMsg, string Msg)
-        {
-            this.TypeMsg = TypeMsg;
-            this.Msg = Msg;
-        }
-    }
+		public XMessage(string TypeMsg, string Msg)
+		{
+			this.TypeMsg = TypeMsg;
+			this.Msg = Msg;
+		}
+	}
 }

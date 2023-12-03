@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DAO\categoriesDAO.cs" />
+    <Compile Include="DAO\MenusDAO.cs" />
     <Compile Include="DAO\ProductsDAO.cs" />
     <Compile Include="DAO\SuppliersDao.cs" />
     <Compile Include="Model\Categories.cs" />
