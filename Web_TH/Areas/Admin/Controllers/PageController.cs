@@ -58,8 +58,8 @@ namespace Web_TH.Areas.Admin.Controllers
 						string slug = posts.Slug;
 						string id = posts.Id.ToString();
 						//Chinh sua sau khi phat hien dieu chua dung cua Edit: them Id
-						//ten file = Slug + Id + phan mo rong cua tap tin
-						string imgName = slug + id + img.FileName.Substring(img.FileName.LastIndexOf("."));
+						//ten file = Slug  + phan mo rong cua tap tin
+						string imgName = slug + img.FileName.Substring(img.FileName.LastIndexOf("."));
 						posts.Image = imgName;
 
 						string PathDir = "~/Public/img/page/";
@@ -74,9 +74,13 @@ namespace Web_TH.Areas.Admin.Controllers
 
 				//Xu ly cho muc CreateAt
 				posts.CreateAt = DateTime.Now;
+				//Xu ly cho muc UpdateAt
+				posts.UpdateAt = DateTime.Now;
 
 				//Xu ly cho muc CreateBy
 				posts.CreateBy = Convert.ToInt32(Session["UserId"]);
+				//Xu ly cho muc UpdateBy
+				posts.UpdateBy = Convert.ToInt32(Session["UserId"]);
 
 				//xu ly cho muc Topics
 				if (postsDAO.Insert(posts) == 1)//khi them du lieu thanh cong
@@ -198,7 +202,7 @@ namespace Web_TH.Areas.Admin.Controllers
 						string id = posts.Id.ToString();
 						//Chinh sua sau khi phat hien dieu chua dung cua Edit: them Id
 						//ten file = Slug + Id + phan mo rong cua tap tin
-						string imgName = slug + id + img.FileName.Substring(img.FileName.LastIndexOf("."));
+						string imgName = slug + img.FileName.Substring(img.FileName.LastIndexOf("."));
 						posts.Image = imgName;
 
 						string PathDir = "~/Public/img/page/";
