@@ -50,9 +50,13 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DAO\categoriesDAO.cs" />
+    <Compile Include="DAO\LinksDAO.cs" />
     <Compile Include="DAO\MenusDAO.cs" />
+    <Compile Include="DAO\PostsDAO.cs" />
     <Compile Include="DAO\ProductsDAO.cs" />
+    <Compile Include="DAO\SlidersDAO.cs" />
     <Compile Include="DAO\SuppliersDao.cs" />
+    <Compile Include="DAO\TopicsDAO.cs" />
     <Compile Include="Model\Categories.cs" />
     <Compile Include="Model\Contacts.cs" />
     <Compile Include="Model\Links.cs" />
