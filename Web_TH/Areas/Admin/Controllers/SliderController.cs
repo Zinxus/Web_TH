@@ -10,6 +10,7 @@ using MyClass.Model;
 using MyClass.DAO;
 using System.IO;
 using Web_TH.Library;
+using System.Web.Services.Description;
 
 namespace Web_TH.Areas.Admin.Controllers
 {
@@ -68,12 +69,15 @@ namespace Web_TH.Areas.Admin.Controllers
 						img.SaveAs(PathFile);
 					}
 				}//ket thuc phan upload hinh anh
-
-				//Xu ly cho muc CreateAt
+				 //Xu ly cho muc CreateAt
 				sliders.CreateAt = DateTime.Now;
+				//Xu ly cho muc UpdateAt
+				sliders.UpdateAt = DateTime.Now;
 
 				//Xu ly cho muc CreateBy
 				sliders.CreateBy = Convert.ToInt32(Session["UserId"]);
+				//Xu ly cho muc UpdateBy
+				sliders.UpdateBy = Convert.ToInt32(Session["UserId"]);
 
 				slidersDAO.Insert(sliders);
 

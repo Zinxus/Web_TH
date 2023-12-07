@@ -2577,7 +2577,6 @@
     <Content Include="Public\vendors\themify-icons\Themify IconFonts 5-23-2014.json" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Areas\Admin\Views\Dasdboard\Index.cshtml" />
     <Content Include="Public\dist\css\adminlte.css.map" />
     <Content Include="Public\dist\css\adminlte.min.css.map" />
     <Content Include="Public\dist\css\alt\adminlte.components.css.map" />
@@ -2728,9 +2727,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layoutsite.cshtml" />
     <Content Include="Views\site\Index.cshtml" />
     <Content Include="Views\Module\MainMenu.cshtml" />
@@ -2741,6 +2737,7 @@
     <Folder Include="Models\" />
     <Folder Include="Public\img\page\" />
     <Folder Include="Public\img\post\" />
+    <Folder Include="Public\img\slider\" />
     <Folder Include="Public\img\supplier\" />
   </ItemGroup>
   <ItemGroup>

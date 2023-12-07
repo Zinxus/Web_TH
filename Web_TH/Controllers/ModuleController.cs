@@ -17,7 +17,7 @@ namespace Web_TH.Controllers
 		public ActionResult MainMenu()
 		{
 			List<Menus> list = menusDAO.getListByParentId(0);
-			return View("MainMenu",list);
+			return PartialView("MainMenu",list);
 		}
 	}
 }

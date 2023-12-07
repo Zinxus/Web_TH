@@ -19,7 +19,7 @@ namespace MyClass.Model
 		public string Name { get; set; }
 		public string URl { get; set; }
 		public string Image { get; set; }
-		public int Order { get; set; }
+		public int? Order { get; set; }
 		[Required]
 		public string Position { get; set; }
 		[Required]
