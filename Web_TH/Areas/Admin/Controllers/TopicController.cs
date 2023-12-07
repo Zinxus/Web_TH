@@ -62,9 +62,13 @@ namespace Web_TH.Areas.Admin.Controllers
 
 				//Xu ly cho muc CreateAt
 				topics.CreateAt = DateTime.Now;
+				//Xu ly cho muc UpdateAt
+				topics.UpdateAt = DateTime.Now;
 
 				//Xu ly cho muc CreateBy
 				topics.CreateBy = Convert.ToInt32(Session["UserId"]);
+				//Xu ly cho muc CreateBy
+				topics.UpdateBy = Convert.ToInt32(Session["UserId"]);
 
 				//xu ly cho muc Topics
 				if (topicsDAO.Insert(topics) == 1)//khi them du lieu thanh cong
